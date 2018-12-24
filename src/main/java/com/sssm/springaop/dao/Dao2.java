@@ -6,8 +6,11 @@ import org.springframework.stereotype.Repository;
 public class Dao2 {
 
 	public String getData() {
-		// throw new RuntimeException("++++ Runtime Exception ++++");
 		return "Dao2";
+	}
+
+	public String getExceptionDuringDataRetrieve() {
+		throw new RuntimeException("++++ Runtime Exception ++++");
 	}
 
 }

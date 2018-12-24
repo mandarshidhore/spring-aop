@@ -15,4 +15,8 @@ public class Business2 {
 		return dao2.getData();
 	}
 
+	public String getExceptionDuringDataRetrieve() {
+		return dao2.getExceptionDuringDataRetrieve();
+	}
+
 }

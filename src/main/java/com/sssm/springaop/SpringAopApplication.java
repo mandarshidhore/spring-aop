@@ -37,6 +37,11 @@ public class SpringAopApplication implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 		LOGGER.info(business1.getData() + "\n");
 		LOGGER.info(business2.getData() + "\n");
+		try {
+			LOGGER.info(business2.getExceptionDuringDataRetrieve() + "\n");
+		} catch (Exception e) {
+			LOGGER.error("^^^^ Caught Exception ^^^^" + "\n");
+		}
 		LOGGER.info(someLayerClass1.doSomething() + "\n");
 		LOGGER.info(someLayerClass2.doSomething() + "\n");
 	}

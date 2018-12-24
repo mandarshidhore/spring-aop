@@ -8,12 +8,13 @@ public class CommonJoinPointConfig {
 	public void dataLayerPointCutExecution() {
 
 	}
-	
-	@Pointcut("execution(* com.sssm.springaop.somelayer.*.*(..))")
+
+	// only track one particular class
+	@Pointcut("execution(* com.sssm.springaop.somelayer.SomeLayerClass1.*(..))")
 	public void beanStartingWithSomeLayerClassPointCutExecution() {
 
 	}
-	
+
 	@Pointcut("@annotation(com.sssm.springaop.somelayer.TrackThisAnnotation)")
 	public void TrackAnnotationPointCutExecution() {
 
