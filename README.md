@@ -1,2 +1,2 @@
 # spring-aop
-spring aop app
+spring aop app using spring boot
